@@ -12,6 +12,7 @@ public class ExceptionMessage {
 
     //OPERATIONS
     public static final String TRANSFER_ERROR = "Error en la transferència";
+    public static final String ACCOUNTS_ERRORS = "Algun dels comptes no existeix";
 
 
 }
