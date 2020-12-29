@@ -2,6 +2,7 @@ package Excepcions.ActivitatExceptions.Model;
 
 import Excepcions.ActivitatExceptions.Exceptions.BankAccountException;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import static Excepcions.ActivitatExceptions.Exceptions.ExceptionMessage.*;
@@ -9,11 +10,19 @@ import static Excepcions.ActivitatExceptions.Exceptions.ExceptionMessage.*;
 public class CompteEstalvi {
     private String numCompte;
     private double saldo;
-    private List<Client> llista_usuaris;
+    private List<Client> llista_usuaris = new ArrayList<>();
 
     public CompteEstalvi(String numCompte) {
         this.numCompte = numCompte;
         saldo = 0;
+    }
+
+    public CompteEstalvi() {
+
+    }
+
+    public void setSaldo(double saldo) {
+        this.saldo = saldo;
     }
 
     /**
